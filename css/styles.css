@@ -445,8 +445,8 @@ button {
 .section-one {
     background-color: #2e2f42;
     padding: 72px 0px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/Dark-bg-mobile.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url('../images/title/backimg-mobile.jpg');
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -454,6 +454,15 @@ button {
     max-width: 320px;   
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-resolution: 2x) {
+    .section-one {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/title/backimg-mobile@2x.jpg');
+    }
 }
 
 
@@ -496,8 +505,16 @@ button {
         padding: 72px 0;
         max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-bg-tablet.jpg);
+        url('../images/title/backimg-tablet.jpg');
     }
+
+    @media screen {
+        .section-one {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/title/backimg-tablet@2x.jpg');   
+        }
+    }
+
     .section-one-title {
         font-weight: 700;
         font-size: 56px;
@@ -517,8 +534,17 @@ button {
         padding: 188px 0;
         max-width: 100%;   
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/backimg.jpg);
+        url('../images/title/backimg.jpg');
     }
+
+    @media (min-resolution: 2x) {
+        .section-one {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), 
+            url('../images/title/backimg@2x.jpg');     
+        }
+    }
+        
 
     .section-one-title {
         font-size: 56px;
@@ -844,7 +870,7 @@ button {
     padding-top: 96px;
     padding-bottom: 96px;
     margin-left: auto;
-        margin-right: auto;
+    margin-right: auto;
 }
 
 .section-four-title {
